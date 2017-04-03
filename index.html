@@ -123,7 +123,7 @@
                     strokeWeight: 0,
                     scale: 1.5
                 }
-                var colors = ["#BA68C8", "#D32F2F", "#03A9F4", "#F57F17", "#546E7A", "#66BB6A", "#303F9F", "#5D4037"];
+                var colors = ["#BA68C8", "#D32F2F", "#03A9F4", "#F57F17", "#546E7A", "#66BB6A", "#303F9F", "#513E16", "#D6B484", "#12BAA0", "#FEFF00"];
 
                 // Display a map on the web page
                 map = new google.maps.Map(document.getElementById("mapCanvas"), mapOptions);
@@ -137,7 +137,12 @@
                     ['Lido', 56.9271798, 24.1599406],
                     ['Rozengrals', 56.9484793, 24.1060458],
                     ['Ferma', 56.9624566, 24.1022323],
-                    ['Kiploku Krogs', 56.9504126, 24.1050862]
+                    ['Kiploku Krogs', 56.9504126, 24.1050862],
+                    ['Mākonis | Cocktails & Design', 56.954911,24.1310126],
+                    ['Bierhaus', 56.9565676,24.1207447],
+                    ['Labietis', 56.9652281,24.1305153],
+                    ['Rocket Bean Roastery', 56.9638626,24.1319523],
+
                 ];
 
                 // Info window content
@@ -217,6 +222,50 @@
                         '<a href="https://www.tripadvisor.com/Restaurant_Review-g274967-d1147230-Reviews-Kiploku_Krogs-Riga_Riga_Region.html" target="_blank">TripAdvisor</a>' +
                         '<a href="https://foursquare.com/v/%C4%B7iploku-krogs/4ca9fb6fd971b1f724a123e1" target="_blank">Foursquare</a>' +
                         '<a href="https://maps.google.com?saddr=Current+Location&daddr=56.9504126, 24.1050862" target="_blank">Directions</a></p>' +
+                        '</div>'
+                    ],
+                    ['<div class="info_content">' +
+                        '<h3>Mākonis</h3>' +
+                        '<i>Latvian food</i>' +
+                        '<p><br />This place was suggested by my friends with a Masters degree in Restauraning.<br />Quote: <spant style="font-style:italic;">If you want delitious Latvian food, you might want to go there.</span></p>' +
+                        '<p class="links"><a href="http://translate.google.com/translate?js=n&sl=auto&tl=en&u=http://www.makonis.eu/menu/" target="_blank">Menu</a>' +
+                        '<a href="http://www.google.com/images?q=makonis+riga+stabu" target="_blank">Image Gallery</a>' +
+                        '<a href="https://www.tripadvisor.com/Restaurant_Review-g274967-d3929620-Reviews-Makonis_Cocktails_Design-Riga_Riga_Region.html" target="_blank">TripAdvisor</a>' +
+                        '<a href="https://foursquare.com/makoniscoffee" target="_blank">Foursquare</a>' +
+                        '<a href="https://maps.google.com?saddr=Current+Location&daddr=56.954911,24.1310126" target="_blank">Directions</a></p>' +
+                        '</div>'
+                    ],
+                    ['<div class="info_content">' +
+                        '<h3>Bierhaus</h3>' +
+                        '<i>Latvian food</i>' +
+                        '<p><br />This place was suggested by my friends with a Masters degree in Restauraning.<br />Quote: <spant style="font-style:italic;">If you want delitious Latvian food, you might want to go there.</span></p>' +
+                        '<p class="links"><a href="http://www.bierhaus.lv/en/our-menu/index.html" target="_blank">Menu</a>' +
+                        '<a href="http://www.google.com/images?q=Bierhaus+riga" target="_blank">Image Gallery</a>' +
+                        '<a href="https://www.tripadvisor.com/Restaurant_Review-g274967-d8299672-Reviews-Bierhaus-Riga_Riga_Region.html" target="_blank">TripAdvisor</a>' +
+                        '<a href="http://4sq.com/MfdUdr" target="_blank">Foursquare</a>' +
+                        '<a href="https://maps.google.com?saddr=Current+Location&daddr=56.9565676,24.1207447" target="_blank">Directions</a></p>' +
+                        '</div>'
+                    ],
+                    ['<div class="info_content">' +
+                        '<h3>Labietis</h3>' +
+                        '<i>Latvian food</i>' +
+                        '<p><br />This place was suggested by my friends with a Masters degree in Restauraning.<br />Quote: <spant style="font-style:italic;">If you want delitious Latvian food, you might want to go there.</span></p>' +
+                        '<p class="links"><a href="http://www.labietis.lv/en" target="_blank">Menu</a>' +
+                        '<a href="http://www.google.com/images?q=labietis+riga" target="_blank">Image Gallery</a>' +
+                        '<a href="https://www.tripadvisor.com/Restaurant_Review-g274967-d6624931-Reviews-Labietis_Alus_Darbnica-Riga_Riga_Region.html" target="_blank">TripAdvisor</a>' +
+                        '<a href="https://foursquare.com/v/labietis/51fe201a498ec47a1d7a51e1" target="_blank">Foursquare</a>' +
+                        '<a href="https://maps.google.com?saddr=Current+Location&daddr=56.9652281,24.1305153" target="_blank">Directions</a></p>' +
+                        '</div>'
+                    ],
+                    ['<div class="info_content">' +
+                        '<h3>Rocket Bean Roastery</h3>' +
+                        '<i>Latvian food</i>' +
+                        '<p><br />This place was suggested by my friends with a Masters degree in Restauraning.<br />Quote: <spant style="font-style:italic;">If you want delitious Latvian food, you might want to go there.</span></p>' +
+                        '<p class="links"><a href="http://www.rocketbean.lv/en/our-coffees/" target="_blank">Menu</a>' +
+                        '<a href="http://www.google.com/images?q=Rocket+Bean+Roastery+riga" target="_blank">Image Gallery</a>' +
+                        '<a href="https://www.tripadvisor.com/Restaurant_Review-g274967-d7991947-Reviews-Rocket_Bean_Roastery-Riga_Riga_Region.html" target="_blank">TripAdvisor</a>' +
+                        '<a href="https://foursquare.com/v/rocket-bean-roastery/54b93c7c498e7bffeda03a99" target="_blank">Foursquare</a>' +
+                        '<a href="https://maps.google.com?saddr=Current+Location&daddr=56.9638626,24.1319523" target="_blank">Directions</a></p>' +
                         '</div>'
                     ]
                 ];
